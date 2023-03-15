@@ -18,24 +18,20 @@ enum SortingOption {
 }
 struct MenuItemsView: View {
     var body: some View {
-        VStack {
-            Text("Filter")
-                .frame(
-                    maxWidth: .infinity,
-                    maxHeight: 50,
-                    alignment: .topLeading)
-                .fontWeight(.bold)
-                .font(.system(size: 35))
-            Text("selected categories")
-                .frame(
-                    maxWidth: .infinity,
-                    maxHeight: 20,
-                    alignment: .topLeading)
-            Text("Sort By")
+        NavigationView {
+            Text("Menu")
                 .frame(
                     maxWidth: .infinity,
                     maxHeight: .infinity,
                     alignment: .topLeading)
+                .fontWeight(.bold)
+                .font(.system(size: 35))
+                .toolbar {
+                    NavigationLink( destination: MenuItemsOptionView()){
+                        Image(systemName: "slider.horizontal.3")
+                    }
+                }
+            
         }
         .padding()
     }
