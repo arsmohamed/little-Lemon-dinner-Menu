@@ -9,7 +9,26 @@ import SwiftUI
 
 struct MenuItemsOptionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Filter")
+                .frame(
+                    maxWidth: .infinity,
+                    maxHeight: 50,
+                    alignment: .topLeading)
+                .fontWeight(.bold)
+                .font(.system(size: 35))
+            Text("selected categories")
+                .frame(
+                    maxWidth: .infinity,
+                    maxHeight: 20,
+                    alignment: .topLeading)
+            Text("Sort By")
+                .frame(
+                    maxWidth: .infinity,
+                    maxHeight: .infinity,
+                    alignment: .topLeading)
+        }
+        .padding()
     }
 }
 
