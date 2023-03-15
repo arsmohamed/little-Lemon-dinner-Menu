@@ -6,10 +6,33 @@
 //
 
 import SwiftUI
-
+enum CategoriesOption {
+    case Food
+    case Drink
+    case Desert
+}
+enum SortingOptions {
+    case Popular
+    case Prices
+    case Alphabetically
+}
 struct MenuItemsOptionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text("Filter")
+                .fontWeight(.bold)
+                .font(.title)
+                .offset(x:-150, y:-300)
+                .padding(20)
+            Text("selected categories")
+                .fontWeight(.light)
+                .offset(x:-100, y:-300)
+            Text("sort By")
+                .fontWeight(.light)
+                .offset(x:-144, y:-300)
+        }
+        .frame(width: 160, height: 160)
+            
     }
 }
 

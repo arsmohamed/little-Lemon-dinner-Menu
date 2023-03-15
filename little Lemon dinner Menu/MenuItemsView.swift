@@ -9,13 +9,17 @@ import SwiftUI
 
 struct MenuItemsView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                Text("Hello, MenuItemsView!")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        NavigationLink(destination: MenuItemsOptionView()) {
+                            Image(systemName: "slider.horizontal.3")
+                        }
+                    }
+            }
         }
-        .padding()
     }
 }
 
