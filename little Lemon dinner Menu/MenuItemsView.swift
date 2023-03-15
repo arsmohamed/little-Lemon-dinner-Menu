@@ -6,14 +6,36 @@
 //
 
 import SwiftUI
-
+enum categoriesOption {
+    case Food
+    case Drink
+    case Dessert
+}
+enum SortingOption {
+    case popular
+    case Price
+    case alpha
+}
 struct MenuItemsView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Filter")
+                .frame(
+                    maxWidth: .infinity,
+                    maxHeight: 50,
+                    alignment: .topLeading)
+                .fontWeight(.bold)
+                .font(.system(size: 35))
+            Text("selected categories")
+                .frame(
+                    maxWidth: .infinity,
+                    maxHeight: 20,
+                    alignment: .topLeading)
+            Text("Sort By")
+                .frame(
+                    maxWidth: .infinity,
+                    maxHeight: .infinity,
+                    alignment: .topLeading)
         }
         .padding()
     }
