@@ -18,7 +18,6 @@ enum sorting: String, CaseIterable {
     case alpha = "A-Z"
 }
 struct MenuItemsOptionView: View {
-    
     var body: some View {
         VStack (alignment: .leading){
             Text("Filter")
