@@ -6,16 +6,14 @@
 //
 
 import SwiftUI
-enum categoriesOption {
-    case Food
-    case Drink
-    case Dessert
+
+struct Menu : Identifiable {
+    
+    var id: ObjectIdentifier
+    let Title : String
+    var Ingredients: Ingredient
 }
-enum SortingOption {
-    case popular
-    case Price
-    case alpha
-}
+
 struct MenuItemsView: View {
     var body: some View {
         NavigationView {
