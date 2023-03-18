@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct Menu : Identifiable {
-    
-    var id: ObjectIdentifier
-    let Title : String
-    var Ingredients: Ingredient
-}
-
 struct MenuItemsView: View {
     var body: some View {
         NavigationView {
