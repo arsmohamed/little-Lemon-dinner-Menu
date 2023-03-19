@@ -17,6 +17,7 @@
 		CFB8353829C4F98C00CB499C /* MenuCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8353729C4F98C00CB499C /* MenuCategory.swift */; };
 		CFB8353A29C5080E00CB499C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB8353929C5080E00CB499C /* Ingredient.swift */; };
 		CFC2444A29C55FA200AB1BF9 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC2444929C55FA200AB1BF9 /* MenuItem.swift */; };
+		CFC2444C29C5639300AB1BF9 /* MockingMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC2444B29C5639300AB1BF9 /* MockingMenu.swift */; };
 		CFF21F2A29C1E2CA005AE92A /* MenuItemsOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF21F2929C1E2CA005AE92A /* MenuItemsOptionView.swift */; };
 		CFF21F2C29C1E2E3005AE92A /* MenuItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF21F2B29C1E2E3005AE92A /* MenuItemDetailsView.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		CFB8353729C4F98C00CB499C /* MenuCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCategory.swift; sourceTree = "<group>"; };
 		CFB8353929C5080E00CB499C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		CFC2444929C55FA200AB1BF9 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		CFC2444B29C5639300AB1BF9 /* MockingMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockingMenu.swift; sourceTree = "<group>"; };
 		CFF21F2929C1E2CA005AE92A /* MenuItemsOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsOptionView.swift; sourceTree = "<group>"; };
 		CFF21F2B29C1E2E3005AE92A /* MenuItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				CFC2444929C55FA200AB1BF9 /* MenuItem.swift */,
 				CFAB78ED29C1CE250027E845 /* MenuItemsView.swift */,
 				CFB8353729C4F98C00CB499C /* MenuCategory.swift */,
+				CFC2444B29C5639300AB1BF9 /* MockingMenu.swift */,
 				CFB8353929C5080E00CB499C /* Ingredient.swift */,
 				CFF21F2929C1E2CA005AE92A /* MenuItemsOptionView.swift */,
 				CFF21F2B29C1E2E3005AE92A /* MenuItemDetailsView.swift */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC2444A29C55FA200AB1BF9 /* MenuItem.swift in Sources */,
+				CFC2444C29C5639300AB1BF9 /* MockingMenu.swift in Sources */,
 				CFF21F2A29C1E2CA005AE92A /* MenuItemsOptionView.swift in Sources */,
 				CFF21F2C29C1E2E3005AE92A /* MenuItemDetailsView.swift in Sources */,
 				CFB8353A29C5080E00CB499C /* Ingredient.swift in Sources */,

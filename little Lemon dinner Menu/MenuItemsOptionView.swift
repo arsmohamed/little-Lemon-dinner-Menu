@@ -50,6 +50,28 @@ struct MenuItemsOptionView: View {
     }
 }
 
+//
+//struct MenuItemsOptionView: View {
+//    
+//    var body: some View {
+//        VStack(alignment: .leading, spacing: 20) {
+//            Section(header: Text("SELECTED CATEGORIES")) {
+//                ForEach(MenuCategory.allCases, id: \.self) { category in
+//                    Text(category.rawValue)
+//                }
+//            }
+//            Spacer()
+//            Section(header: Text("SORT BY")) {
+//                ForEach(MenuItemSortOption.allCases, id: \.self) { sortOption in
+//                    Text(sortOption.rawValue)
+//                }
+//            }
+//        }
+//        .padding()
+//        .navigationBarTitle(Text("Menu Options"))
+//    }
+//}
+
 struct MenuItemsOptionView_Previews: PreviewProvider {
     static var previews: some View {
         MenuItemsOptionView()

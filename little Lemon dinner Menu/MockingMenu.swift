@@ -1,18 +1,11 @@
 ////
-////  MenuItem.swift
+////  MockingMenu.swift
 ////  little Lemon dinner Menu
 ////
 ////  Created by Amr Mohamed on 2023-03-18.
 ////
 //
 //import Foundation
-//import SwiftUI
-//struct MenuItem: Identifiable {
-//    let id = UUID()
-//    var title: String
-//    var category: MenuCategory
-//    var ingredients: [Ingredient]
-//}
 //
 //struct MenuData {
 //    //MARK: - Food

@@ -7,10 +7,14 @@
 
 import Foundation
 
-enum Ingredient : String {
-    case Spinach = "Spinach"
-    case Broccoli = "Broccoli"
-    case Carrot = "Carrot"
-    case Pasta = "Pasta"
-    case Tomato = "Tomato sauce"
+enum Ingredient: String {
+    case Spinach
+    case Broccoli
+    case Carrot
+    case Pasta
+    case TomatoSauce = "Tomato sauce"
+
+    var stringValue: String {
+        return self.rawValue
+    }
 }
