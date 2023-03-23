@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF0D1CE429CC5F80008E259A /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D1CE329CC5F80008E259A /* SortBy.swift */; };
+		CF0D1CE729CC64CA008E259A /* MenuViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D1CE629CC64CA008E259A /* MenuViewDataModel.swift */; };
 		CFAB78EC29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB78EB29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift */; };
 		CFAB78EE29C1CE250027E845 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB78ED29C1CE250027E845 /* MenuItemsView.swift */; };
 		CFAB78F029C1CE260027E845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAB78EF29C1CE260027E845 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		CF0D1CE329CC5F80008E259A /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
+		CF0D1CE629CC64CA008E259A /* MenuViewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewDataModel.swift; sourceTree = "<group>"; };
 		CFAB78E829C1CE250027E845 /* little Lemon dinner Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "little Lemon dinner Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAB78EB29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = little_Lemon_dinner_MenuApp.swift; sourceTree = "<group>"; };
 		CFAB78ED29C1CE250027E845 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF0D1CE529CC64B1008E259A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				CF0D1CE629CC64CA008E259A /* MenuViewDataModel.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		CFAB78DF29C1CE250027E845 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +116,7 @@
 		CFAB78EA29C1CE250027E845 /* little Lemon dinner Menu */ = {
 			isa = PBXGroup;
 			children = (
+				CF0D1CE529CC64B1008E259A /* Mock */,
 				CFAB78EB29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift */,
 				CFAB78ED29C1CE250027E845 /* MenuItemsView.swift */,
 				CFF21F2929C1E2CA005AE92A /* MenuItemsOptionView.swift */,
@@ -281,6 +292,7 @@
 				CFF21F2C29C1E2E3005AE92A /* MenuItemDetailsView.swift in Sources */,
 				CFB8353A29C5080E00CB499C /* Ingredient.swift in Sources */,
 				CFAB78EE29C1CE250027E845 /* MenuItemsView.swift in Sources */,
+				CF0D1CE729CC64CA008E259A /* MenuViewDataModel.swift in Sources */,
 				CFAB78EC29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift in Sources */,
 				CFB8353829C4F98C00CB499C /* MenuCategory.swift in Sources */,
 			);
