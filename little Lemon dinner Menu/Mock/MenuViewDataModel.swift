@@ -8,7 +8,8 @@
 import Foundation
 
 class MenuViewDataModel : ObservableObject {
-    
+    @Published var isOpenedOptionView = false
+
     //Data food
     @Published var foods: [Menu] = [
         Menu(price: 10, title: "Food 1", menuCategory: .food , ordersCount: 10, ingredient: [.broccoli, .broccoli]),
@@ -44,4 +45,47 @@ class MenuViewDataModel : ObservableObject {
         Menu(price: 12, title: "Dessert 5", menuCategory: .dessert , ordersCount: 12, ingredient: []),
         Menu(price: 2, title: "Dessert 6", menuCategory: .dessert , ordersCount: 11, ingredient: [])
     ]
+    //for toggling
+    @Published var isShowFood = true
+    @Published var isShowDrinks = true
+    @Published var isShowDesserts = true
+    //default sorting
+    @Published var sortBy = SortBy.fromAtoZ
+    
+    func updateMenuItems() {
+        switch sortBy {
+        // Sorting by number of orders
+        case .mostPopular:
+            foods.sort() { $0.ordersCount > $1.ordersCount }
+            drinks.sort() { $0.ordersCount > $1.ordersCount }
+            desserts.sort() { $0.ordersCount > $1.ordersCount }
+        // Sorting by cost from lowest to highest
+        case .fromLowPrice:
+            foods.sort() { $0.price < $1.price }
+            drinks.sort() { $0.price < $1.price }
+            desserts.sort() { $0.price < $1.price }
+        // Sort by titles alphabetically and by digits
+        case .fromAtoZ:
+            foods.sort() {
+                sortByTitle(lhs: $0, rhs: $1)
+            }
+            drinks.sort() {
+                sortByTitle(lhs: $0, rhs: $1)
+            }
+            desserts.sort() {
+                sortByTitle(lhs: $0, rhs: $1)
+            }
+        }
+    }
+    func sortByTitle(lhs: Menu, rhs: Menu) -> Bool {
+        let lhsTitle = lhs.title.split(separator: " ")
+        let rhsTitle = rhs.title.split(separator: " ")
+        let lhsNumber = Int(lhsTitle[lhsTitle.count - 1]) ?? 0
+        let rhsNumber = Int(rhsTitle[rhsTitle.count - 1]) ?? 0
+        if lhsNumber != rhsNumber {
+            return lhsNumber < rhsNumber
+        } else {
+            return lhs.title < rhs.title
+        }
+    }
 }

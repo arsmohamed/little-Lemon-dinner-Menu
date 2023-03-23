@@ -16,7 +16,7 @@ protocol MenuItemProtocol {
     var ingredient: [Ingredient] { get set }
 }
 
-struct Menu : Identifiable, MenuItemProtocol {
+struct Menu : Identifiable,Hashable, MenuItemProtocol {
     var id = UUID()
     var price: Double
     var title: String
