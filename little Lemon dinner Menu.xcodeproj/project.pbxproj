@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0D1CE429CC5F80008E259A /* SortBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0D1CE329CC5F80008E259A /* SortBy.swift */; };
 		CFAB78EC29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB78EB29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift */; };
 		CFAB78EE29C1CE250027E845 /* MenuItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB78ED29C1CE250027E845 /* MenuItemsView.swift */; };
 		CFAB78F029C1CE260027E845 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFAB78EF29C1CE260027E845 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF0D1CE329CC5F80008E259A /* SortBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBy.swift; sourceTree = "<group>"; };
 		CFAB78E829C1CE250027E845 /* little Lemon dinner Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "little Lemon dinner Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAB78EB29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = little_Lemon_dinner_MenuApp.swift; sourceTree = "<group>"; };
 		CFAB78ED29C1CE250027E845 /* MenuItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsView.swift; sourceTree = "<group>"; };
@@ -105,12 +107,13 @@
 			isa = PBXGroup;
 			children = (
 				CFAB78EB29C1CE250027E845 /* little_Lemon_dinner_MenuApp.swift */,
-				CFC2444929C55FA200AB1BF9 /* MenuItem.swift */,
 				CFAB78ED29C1CE250027E845 /* MenuItemsView.swift */,
-				CFB8353729C4F98C00CB499C /* MenuCategory.swift */,
-				CFB8353929C5080E00CB499C /* Ingredient.swift */,
 				CFF21F2929C1E2CA005AE92A /* MenuItemsOptionView.swift */,
 				CFF21F2B29C1E2E3005AE92A /* MenuItemDetailsView.swift */,
+				CFC2444929C55FA200AB1BF9 /* MenuItem.swift */,
+				CFB8353929C5080E00CB499C /* Ingredient.swift */,
+				CFB8353729C4F98C00CB499C /* MenuCategory.swift */,
+				CF0D1CE329CC5F80008E259A /* SortBy.swift */,
 				CFAB78EF29C1CE260027E845 /* Assets.xcassets */,
 				CFAB78F129C1CE260027E845 /* Preview Content */,
 			);
@@ -274,6 +277,7 @@
 			files = (
 				CFC2444A29C55FA200AB1BF9 /* MenuItem.swift in Sources */,
 				CFF21F2A29C1E2CA005AE92A /* MenuItemsOptionView.swift in Sources */,
+				CF0D1CE429CC5F80008E259A /* SortBy.swift in Sources */,
 				CFF21F2C29C1E2E3005AE92A /* MenuItemDetailsView.swift in Sources */,
 				CFB8353A29C5080E00CB499C /* Ingredient.swift in Sources */,
 				CFAB78EE29C1CE250027E845 /* MenuItemsView.swift in Sources */,
